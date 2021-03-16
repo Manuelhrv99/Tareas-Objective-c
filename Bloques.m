@@ -1,14 +1,14 @@
-#import "Bloques.h"
+#import "bloques.h"
 
 @implementation Bloques
 
-NSString (^BloqueSaludo)(NSString) = ^(NSString Nombre){
-    return Nombre;
+void (^BloqueSaludo)(NSString *) = ^(NSString *Nombre){
+    NSLog(@"Hola %@", Nombre);
 };
 
 //Implementacion del bloque
--(void) division{
-    NSLog(@"Hola %@", BloqueSaludo("Manuel Rodriguez"));
+-(void) ImprimirSaludo{
+    BloqueSaludo(@"Manuel Rodriguez")
 }
 
 @end
