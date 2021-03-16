@@ -2,6 +2,6 @@
 
 @interface Bloques : NSObject
 
--(void) Saludo;
+-(void) ImprimirSaludo;
 
 @end
