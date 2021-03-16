@@ -1,13 +1,13 @@
 #import <Foundation/Foundation.h>
 
-#import "Bloques.h"
+#import "bloques.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
     
         Bloques *bloque = [[Bloques alloc]init];
         
-        [bloque Saludo];
+        [bloque ImprimirSaludo];
     }
     return 0;
 }
