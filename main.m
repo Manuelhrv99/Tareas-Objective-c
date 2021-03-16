@@ -1,16 +1,13 @@
 #import <Foundation/Foundation.h>
 
-#import "Calificaciones.h"
+#import "Bloques.h"
 
-int main (int argc, const char * argv[])
-{
-        NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+    
+        Bloques *bloque = [[Bloques alloc]init];
         
-        //char Mensaje = "";
-        
-        NSLog(@"hola felipe");
-        NSLog(@"%@",[Mensaje Saludo2]);
-        NSLog(@"%@",[Mensaje saludonombre:@"felipe" Andapellido:@"Hernandez"]);
-        [pool drain];
-        return 0;
+        [bloque Saludo];
+    }
+    return 0;
 }
